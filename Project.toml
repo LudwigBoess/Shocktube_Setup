@@ -1,0 +1,4 @@
+[deps]
+AnalyticMHDTestSolutions = "fbea1840-634b-4ffc-8c6c-e633f751f78a"
+BuildShocktubes = "98dca076-ffb7-49ce-ba5c-1a17404403f4"
+GadgetIO = "826b50da-1eb7-48f3-bd4b-d2350582c309"
