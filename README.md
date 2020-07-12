@@ -7,7 +7,7 @@ This script gives a framework to set up arbitrary shocktubes for standard hydro 
 The files `Project.toml` and `Manifest.toml` contain all dependencies with the correct version numbers. The first line of the script installs dependencies and activates the virtual environment used for the setup:
 
 ```julia
-using Pkg; Pkg.instantiate(); Pkg.activate()
+using Pkg; Pkg.instantiate(); Pkg.activate(".")
 ```
 
 ## General setup
@@ -34,7 +34,7 @@ ShockParameters(glass_file::String="",                  # path to a suitable gla
 
 You can set `U` by hand, or get them by fixing the left value (where the high density region is) and solving for the right value in such a way that the resulting shock will have a target Mach number.
 
-For that we use the package [AnalyticMHDTestSolutions](https://github.com/LudwigBoess/AnalyticMHDTestSolutions.jl).
+For that we use the package [AnalyticMHDTestSolutions.jl](https://github.com/LudwigBoess/AnalyticMHDTestSolutions.jl).
 To get the left and right internal energies for an arbitrary Mach number use:
 
 ```julia

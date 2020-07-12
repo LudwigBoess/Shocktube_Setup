@@ -1,6 +1,6 @@
 # activate current environment
 @info "ACtivating environment..."
-using Pkg; Pkg.instantiate(); Pkg.activate()
+using Pkg; Pkg.instantiate(); Pkg.activate(".")
 @info "\tdone!"
 
 # load dependencies
